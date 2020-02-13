@@ -79,20 +79,24 @@
     <table>
         <tr class="border">
             <td class="box1">
-                <img src="img1.jpg">Лупа
+                <img src="img1.jpg"><br>Поиск тур. агенства
             </td>
 
             <td class="box2">
                 <h3>Новости</h3>
                 <hr>
-                Текст Текст Текст Текст Текст Текст Текст Текст
-                Текст Текст Текст Текст Текст Текст Текст Текст
-                Текст Текст Текст Текст Текст Текст Текст Текст
-                Текст Текст Текст Текст Текст Текст Текст Текст
-                Текст Текст Текст Текст Текст Текст Текст Текст
-                Текст Текст Текст Текст Текст Текст Текст Текст
-                Текст Текст Текст Текст Текст Текст Текст Текст
-                Текст Текст Текст Текст Текст Текст Текст Текст
+                Не смотря на существование нацпроекта по сокращению малоимущих в два раза, количество россиян, «отброшенных» за черту бедности неумолимо продолжает расти. Только за прошедший год их стало больше на 20 миллионов!
+                <br>
+                <br>
+                Официальная статистика сообщает, что 14% населения страны являются бедными, т.е. имеют доход ниже прожиточного минимума на каждого члена семьи. Несложно догадаться, что реальное положение вещей гораздо хуже.
+                <br>
+                <br>
+                В середине 2019 года Росстат провел опрос населения, который показал следующие цифры:
+                Не хватает денег даже на еду - 1%
+                Хватает денег на еду, но на одежду, обувь и оплату ЖКУ точно нет – 14%
+                Получается, что 15% населения близки к полной нищете!
+
+
             </td>
         </tr>
     </table>
@@ -132,16 +136,44 @@
             <div><p>Caption Three</p></div>
         </div>
     </div>
-
+    <div>
+        <iframe id="reklama"></iframe>
+    </div>
+    <script>
+        let ads = [
+            "https://snake-io-19.herokuapp.com/",
+            "https://C0smoCat.github.io/jsTest/tests/dots/index.html",
+            "https://C0smoCat.github.io/jsTest/tests/maze/index.html",
+            "https://C0smoCat.github.io/jsTest/tests/planets/index.html",
+            "https://C0smoCat.github.io/Clonium/index.html"
+        ];
+        document.getElementById("reklama").src = ads[Math.floor(Math.random() * ads.length)];
+    </script>
+    <!--    <img src="img4.jpg">-->
 </div>
 
 <footer>
     <div class="Footer">
-        <div>© 2020 «».</div>
-        <p>©</p>
-        <a target="_blank" href="https://vk.com/caravanpalace"><img src="img1.jpg"></a>
-        <a target="_blank" href="https://www.facebook.com/CaravanPalace"><img src="img1.jpg"></a>
-        <a target="_blank" href="https://twitter.com/caravanpalace"><img src="img1.jpg"></a>
+        <table>
+            <tr class="tr">
+                <td>Подписка на рассылку</td>
+                <td><a target="_blank" href="https://vk.com/caravanpalace">О компании</a></td>
+                <td><a target="_blank" href="https://www.facebook.com/CaravanPalace">Частые вопросы</a></td>
+                <td><a target="_blank" href="https://twitter.com/caravanpalace">Юр. инфорамация</a></td>
+                <td><a target="_blank" href="https://twitter.com/caravanpalace">Конфиденциальность</a></td>
+            </tr>
+            <tr class="tr">
+                <td><form>
+                    <input placeholder="E-mail" type="text" name="search">
+                    <button>></button>
+                </form></td>
+                <td><a target="_blank" href="https://vk.com/caravanpalace">Контакты</a></td>
+                <td><a target="_blank" href="https://www.facebook.com/CaravanPalace">Карты сайта</a></td>
+                <td><a target="_blank" href="https://twitter.com/caravanpalace">Цены и услуги</a></td>
+                <td><a target="_blank" href="https://twitter.com/caravanpalace">Поиск</a></td>
+                <td><p>&copy;</p></td>
+            </tr>
+        </table>
     </div>
 </footer>
 </body>
