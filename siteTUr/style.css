@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: #e9e8e4;
+    /*background-color: ;*/
     /*font-family: 'Didact Gothic', sans-serif;*/
 }
 header{
@@ -89,159 +89,6 @@ nav ul{
     color: #e9e8e4;
 }
 
-/*-slider----------------------*/
-
-.slide {
-    display: block;
-    width: 900px;
-    height: 300px;
-    overflow: hidden;
-    /*	border: 3px solid #888;*/
-    position: relative;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 5px;
-}
-.slide  input {
-    display: none;
-}
-
-.slide  input + label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 8px;
-    background: rgba(90, 90, 90, 0.8);
-    border: 2px solid rgba(190, 190, 190, 0.8);
-
-    cursor: pointer;
-
-    z-index: 100;
-    position: relative;
-
-    margin-right: 4px;
-    top: 90%;
-
-    transition: background 0.8s ease-out 0s;
-}
-
-.slide  input + label:hover {
-    background: rgba(250, 250, 250, 0.8);
-}
-
-.slide  input:checked + label {
-    background: rgba(220, 220, 220, 0.8);
-}
-
-.slide  div {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index: 0;
-}
-
-.slide  div {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
-}
-
-.slide img {
-    width:900px;
-    height:auto;
-}
-
-.slide  input:checked + label + div {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
-}
-
-.slide  div  p {
-    position: absolute;
-    font-size:18px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    text-align: center;
-    color: #fff;
-    text-shadow: 2px 2px 3px #222;
-
-}
-/*    */
-.slideshow-container {
-    max-width: 1000px;
-
-    position: relative;
-    margin: auto;
-
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-.mySlides>img{
-    height: 540px;
-    border-radius: 25px;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
 /*/45614*/
 .nSlide{
     overflow-x: scroll;
@@ -255,10 +102,18 @@ nav ul{
 }
 
 .nSlide > div > div {
-
     position: absolute;
-    bottom: 35px;
-    z-index: 5;
+    bottom: 3px;
+    left: 15px;
+    width: 500px;
+    background: rgba(7, 7, 7, 0.75);
+    color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.nSlide > div > div > p {
+    text-align: center;
 }
 
 .nSlide > div > img {
@@ -266,6 +121,41 @@ nav ul{
     margin-left: 15px;
     width: 500px;
     height: 300px;
+
+}
+
+.nSlide1 {
+    overflow-x: scroll;
+    max-height: 600px;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.nSlide1 > div {
+    position: relative;
+}
+
+.nSlide1 > div > div {
+
+    position: absolute;
+    bottom: 3px;
+    left: 15px;
+    width: 250px;
+    background: rgba(7, 7, 7, 0.75);
+    color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.nSlide1 > div > div > p {
+    text-align: center;
+}
+
+.nSlide1 > div > img {
+    border-radius: 25px;
+    margin-left: 15px;
+    width: 250px;
+    height: 150px;
 }
 /*--Border+-----------------------------*/
 .content > h1{
@@ -274,29 +164,41 @@ nav ul{
     margin: 0 auto;
 }
 .border{
-    display: flow-root;
+    display: flex;
     padding: 25px;
-    border: solid;
-    border-width: 5px;
-    border-color: black;
     margin-right: 10px;
     margin-left: 10px;
 }
+
+td {
+    padding: 25px;
+}
 .box1{
-    padding-right:20px; 
-    border-right: solid;
-    border-width: 5px;
-    border-color: black;
+    /*padding-right:20px; */
+
     font-size:20px;
     float: left;
     display: inline-block;
-    max-width: 450px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.box1 > img {
+    width: 100%;
+    height: 100%;
 }
 .box2{
+    border-left: solid black 5px;
     font-size:20px;
     float: right;
     display: inline-block;
-    max-width: 450px;
+    width: calc(50% - 5px);
+}
+
+.box2 > h3 {
+    text-align: center;
 }
 .image1{
     margin-left: 10px;
