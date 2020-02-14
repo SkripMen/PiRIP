@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Габе жив</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Roboto+Slab&display=swap" rel="stylesheet">  -->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Roboto+Slab&display=swap" rel="stylesheet">-->
 </head>
 <body>
 <header>
@@ -14,49 +14,28 @@
         <button>Поиск</button>
     </form>
 </header>
-<div class="navigation">
-    <div class="Line">
-        <nav>
-            <ul>
-                <li class="navi">
-                    <a class="but" href="index.html">
-                        <div class="data-col">Направления</div>
-                    </a>
-                </li>
-                <li class="navi">
-                    <a class="but" href="index.html">
-                        <div class="data-col">Впечатления</div>
-                    </a>
-                </li>
-                <li class="navi">
-                    <a class="but" href="Gallery.html">
-                        <div class="data-col">Планировать</div>
-                    </a>
-                </li>
-                <li class="navi">
-                    <a class="but" href="#">
-                        <div class="data-col">До поездки</div>
-                    </a>
-                </li>
-                <li class="navi">
-                    <a class="but" href="#">
-                        <div class="data-col">VIP</div>
-                    </a>
-                </li>
-                <li class="navi">
-                    <a class="but" href="media.html">
-                        <div class="data-col">Специальное</div>
-                    </a>
-                </li>
-                <li class="navi">
-                    <a class="but" href="info_about.html">
-                        <div class="data-col">Моя страница</div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="topnav" id="navbar">
+    <a href="#" class="active">Главная</a>
+    <a href="#">Направления</a>
+    <a href="#">Впечатления</a>
+    <a href="#">Планировать</a>
+    <a href="#">До поездки</a>
+    <a href="#">VIP</a>
+    <a href="#">Специальное</a>
+    <a href="#">Моя страница</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        <i class="fa fa-bars"></i>
+    </a>
 </div>
+<button class="button1">Button 1</button>
+<button class="button2"><span>Button 2 </span></button>
+<pre>
+ Карусель можно взять тут: https://codepen.io/JiiB/pen/bWyagM
+ Или тут: https://materializecss.com/carousel.html
+
+ Вот ещё прикол: https://codepen.io/damonbauer/pen/iEnes
+</pre>
 <div class="content">
     <div class="nSlide">
         <div>
@@ -85,18 +64,21 @@
             <td class="box2">
                 <h3>Новости</h3>
                 <hr>
-                Не смотря на существование нацпроекта по сокращению малоимущих в два раза, количество россиян, «отброшенных» за черту бедности неумолимо продолжает расти. Только за прошедший год их стало больше на 20 миллионов!
+                Не смотря на существование Габе и нацпроекта по сокращению малоимущих в два раза, количество россиян,
+                «отброшенных» за черту бедности неумолимо продолжает расти. Только за прошедший год их стало больше на
+                20 миллионов!
                 <br>
                 <br>
-                Официальная статистика сообщает, что 14% населения страны являются бедными, т.е. имеют доход ниже прожиточного минимума на каждого члена семьи. Несложно догадаться, что реальное положение вещей гораздо хуже.
+                Официальная статистика сообщает, что 14% населения страны являются бедными, т.е. имеют доход ниже
+                прожиточного минимума на каждого члена семьи. Несложно догадаться, что реальное положение вещей гораздо
+                хуже.
                 <br>
                 <br>
-                В середине 2019 года Росстат провел опрос населения, который показал следующие цифры:
+                В середине 2019 года Росстат провел опрос населения, который показал что Габе жив а также следующие
+                цифры:
                 Не хватает денег даже на еду - 1%
                 Хватает денег на еду, но на одежду, обувь и оплату ЖКУ точно нет – 14%
                 Получается, что 15% населения близки к полной нищете!
-
-
             </td>
         </tr>
     </table>
@@ -139,6 +121,30 @@
     <div>
         <iframe id="reklama"></iframe>
     </div>
+
+    <button class="open-button" onclick="openForm()">Больше рекламы</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span onclick="closeForm()" class="close">&times;</span>
+            <h2>Габе жив</h2>
+            <hr>
+            Не смотря на существование Габе и нацпроекта по сокращению малоимущих в два раза, количество россиян,
+            «отброшенных» за черту бедности неумолимо продолжает расти. Только за прошедший год их стало больше на
+            20 миллионов!
+            <br>
+            <br>
+            Официальная статистика сообщает, что 14% населения страны являются бедными, т.е. имеют доход ниже
+            прожиточного минимума на каждого члена семьи. Несложно догадаться, что реальное положение вещей гораздо
+            хуже.
+            <br>
+            <br>
+            В середине 2019 года Росстат провел опрос населения, который показал что Габе жив а также следующие цифры:
+            Не хватает денег даже на еду - 1%
+            Хватает денег на еду, но на одежду, обувь и оплату ЖКУ точно нет – 14%
+            Получается, что 15% населения близки к полной нищете!
+        </div>
+    </div>
+
     <script>
         let ads = [
             "https://snake-io-19.herokuapp.com/",
@@ -147,7 +153,46 @@
             "https://C0smoCat.github.io/jsTest/tests/planets/index.html",
             "https://C0smoCat.github.io/Clonium/index.html"
         ];
-        document.getElementById("reklama").src = ads[Math.floor(Math.random() * ads.length)];
+        //document.getElementById("reklama").src = ads[Math.floor(Math.random() * ads.length)];
+
+        const navbar = document.getElementById("navbar");
+
+        function toggleNavbar() {
+            if (navbar.classList.contains("responsive"))
+                navbar.classList.remove("responsive");
+            else
+                navbar.classList.add("responsive");
+        }
+
+        // When the user scrolls the page, execute toggleNavbar
+        window.onscroll = fixNavbar;
+
+        // Get the offset position of the navbar
+        let sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function fixNavbar() {
+            if (window.pageYOffset >= sticky)
+                navbar.classList.add("sticky");
+            else
+                navbar.classList.remove("sticky");
+        }
+
+        const modal = document.getElementById("myModal");
+
+        function openForm() {
+            modal.style.display = "block";
+        }
+
+        function closeForm() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
     </script>
     <!--    <img src="img4.jpg">-->
 </div>
@@ -163,10 +208,12 @@
                 <td><a target="_blank" href="https://twitter.com/caravanpalace">Конфиденциальность</a></td>
             </tr>
             <tr class="tr">
-                <td><form>
-                    <input placeholder="E-mail" type="text" name="search">
-                    <button>></button>
-                </form></td>
+                <td>
+                    <form>
+                        <input placeholder="E-mail" type="text" name="search">
+                        <button>></button>
+                    </form>
+                </td>
                 <td><a target="_blank" href="https://vk.com/caravanpalace">Контакты</a></td>
                 <td><a target="_blank" href="https://www.facebook.com/CaravanPalace">Карты сайта</a></td>
                 <td><a target="_blank" href="https://twitter.com/caravanpalace">Цены и услуги</a></td>
