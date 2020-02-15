@@ -32,7 +32,9 @@ form {
     margin: 25px;
 }
 
+
 /* Nav2 */
+
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -68,7 +70,7 @@ form {
     width: 100%;
 }
 
-.sticky + .content {
+.sticky+.content {
     padding-top: 60px;
 }
 
@@ -76,7 +78,6 @@ form {
     .topnav a:not(:first-child) {
         display: none;
     }
-
     .topnav a.icon {
         float: right;
         display: block;
@@ -87,13 +88,11 @@ form {
     .topnav.responsive {
         position: relative;
     }
-
     .topnav.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
-
     .topnav.responsive a {
         float: none;
         display: block;
@@ -101,7 +100,9 @@ form {
     }
 }
 
+
 /* button1 */
+
 .button1 {
     padding: 15px 25px;
     font-size: 24px;
@@ -125,7 +126,9 @@ form {
     transform: translateY(4px);
 }
 
+
 /* button 2 */
+
 .button2 {
     border-radius: 4px;
     background-color: #f4511e;
@@ -165,117 +168,9 @@ form {
     right: 0;
 }
 
-/* More ads */
-.open-button {
-    background-color: rgba(232, 76, 61, 1);
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
-    box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
-    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1), shake 0.5s infinite;
-}
-
-@keyframes ripple {
-    0% {
-        box-shadow: 0 0 0 0px #4444ee, 0 0 0 0px #fff,
-        0 0 0 0px #4444ee, 0 0 0 0px #fff,
-        0 0 0 0px #4444ee, 0 0 0 0px #fff,
-        0 0 0 0px #4444ee, 0 0 0 0px #fff;
-    }
-    100% {
-        box-shadow: 0 0 0 15px #4444ee, 0 0 0 17px rgba(255, 255, 255, 0),
-        0 0 0 40px #4444ee, 0 0 0 42px rgba(255, 255, 255, 0),
-        0 0 0 70px #4444ee, 0 0 0 72px rgba(255, 255, 255, 0),
-        0 0 0 105px #4444ee, 0 0 0 107px rgba(255, 255, 255, 0);
-    }
-}
-
-@keyframes pulse {
-    to {
-        box-shadow: 0 0 0 450px rgba(232, 76, 61, 0);
-    }
-}
-
-@keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
-}
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    max-width: 800px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 /*/45614*/
+
 .nSlide {
     overflow-x: scroll;
     max-height: 600px;
@@ -283,15 +178,11 @@ form {
     display: flex;
 }
 
-.nSlide > div {
+.nSlide>div {
     position: relative;
 }
 
-.nSlide > div > img:hover {
-    box-shadow: 0 0 50px rgba(0, 0, 0, 1.5);
-}
-
-.nSlide > div > div {
+.nSlide>div>div {
     position: absolute;
     bottom: 3px;
     left: 15px;
@@ -302,16 +193,15 @@ form {
     border-bottom-right-radius: 25px;
 }
 
-.nSlide > div > div > p {
+.nSlide>div>div>p {
     text-align: center;
 }
 
-.nSlide > div > img {
+.nSlide>div>img {
     border-radius: 25px;
     margin-left: 15px;
     width: 500px;
     height: 300px;
-
 }
 
 .nSlide1 {
@@ -321,11 +211,11 @@ form {
     display: flex;
 }
 
-.nSlide1 > div {
+.nSlide1>div {
     position: relative;
 }
 
-.nSlide1 > div > div {
+.nSlide1>div>div {
     position: absolute;
     bottom: 3px;
     left: 15px;
@@ -336,19 +226,21 @@ form {
     border-bottom-right-radius: 25px;
 }
 
-.nSlide1 > div > div > p {
+.nSlide1>div>div>p {
     text-align: center;
 }
 
-.nSlide1 > div > img {
+.nSlide1>div>img {
     border-radius: 25px;
     margin-left: 15px;
     width: 250px;
     height: 150px;
 }
 
+
 /*--Border+-----------------------------*/
-.content > h1 {
+
+.content>h1 {
     text-align: center;
     font-size: 50px;
     margin: 0 auto;
@@ -361,23 +253,21 @@ form {
     margin-left: 10px;
 }
 
-.border > td {
+.border>td {
     padding: 25px;
 }
 
 .box1 {
     /*padding-right:20px; */
-
     font-size: 20px;
     float: left;
     display: inline-block;
     width: 50%;
     height: 100%;
     text-align: center;
-
 }
 
-.box1 > img {
+.box1>img {
     width: 100%;
     height: 100%;
     max-width: 500px;
@@ -394,7 +284,7 @@ form {
     width: calc(50% - 5px);
 }
 
-.box2 > h3 {
+.box2>h3 {
     text-align: center;
 }
 
@@ -408,12 +298,14 @@ form {
     height: auto;
 }
 
-div > iframe {
+div>iframe {
     width: 100%;
     height: 550px;
 }
 
+
 /*---footer---------------*/
+
 footer {
     padding-top: 5px;
     border-top: solid;
@@ -431,11 +323,11 @@ footer .Footer {
     text-align: center;
 }
 
-.tr > td {
+.tr>td {
     padding: 0 25px;
 }
 
-.tr > td > a {
+.tr>td>a {
     text-decoration: none;
     color: black;
 }
