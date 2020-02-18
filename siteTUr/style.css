@@ -33,6 +33,12 @@ form {
 }
 
 /* Nav2 */
+.nav {
+    display: table;
+    margin: 0 auto;
+    min-height: 48px;
+}
+
 .topnav {
     z-index: 1;
     background-color: #333;
@@ -71,35 +77,6 @@ form {
 
 .sticky + .content {
     padding-top: 60px;
-}
-
-@media screen and (max-width: 920px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 920px) {
-    .topnav.responsive {
-        position: relative;
-    }
-
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
 }
 
 /* button1 */
@@ -234,7 +211,7 @@ form {
 
 @keyframes pulse {
     to {
-        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+        box-shadow: 0 0 0 145px rgba(232, 76, 61, 0);
     }
 }
 
@@ -450,23 +427,76 @@ footer {
     border-top: solid;
     border-width: 5px;
     border-color: black;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
 }
 
 footer .Footer {
     margin: 0 auto;
-    width: 1200px;
-    display: block;
+    width: 100%;
+    display: grid;
     text-align: center;
 }
 
 .tr > td {
-    padding: 0 25px;
+    padding: 15px 25px;
 }
 
 .tr > td > a {
     text-decoration: none;
     color: black;
+}
+
+.FooterHide {
+    display: none;
+}
+.tr > td > form{
+    text-align: center;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .nav {
+        display: inline;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .Footer {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+    }
+
+    .FooterHide {
+        display: table;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .tr > td {
+        font-size: 29px;
+    }
 }
