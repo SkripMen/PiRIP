@@ -12,9 +12,10 @@ const ads = [
 ];
 
 window.onload = function () {
-    document.getElementById("reklama").src = ads[Math.floor(Math.random() * ads.length)];
+    document.querySelector(".reklama").src = ads[Math.floor(Math.random() * ads.length)];
     navbar = document.getElementById("navbar");
-    window.onscroll = fixNavbar;
+    window.addEventListener("scroll", fixNavbar, true);
+    window.addEventListener("scroll", fixSupportButton, true);
     sticky = navbar.offsetTop;
     modal = document.getElementById("myModal");
     tns({
@@ -34,6 +35,11 @@ window.onload = function () {
         // высоту задаем в css
     });
 };
+
+function fixSupportButton() {
+    let rect = document.getElementById("footer").getBoundingClientRect();
+    document.getElementById("open-button").style.visibility = (document.documentElement.clientHeight - rect.top < 0) ? "unset" : "hidden";
+}
 
 function toggleNavbar() {
     if (navbar.classList.contains("responsive"))
